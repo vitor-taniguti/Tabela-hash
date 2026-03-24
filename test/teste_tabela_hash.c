@@ -94,3 +94,17 @@ void teste_liberarTabela(){
 
     liberarTabela(t);
 }
+
+int main(){
+    UNITY_BEGIN();
+    RUN_TEST(teste_criarEInicializarTabela);
+    RUN_TEST(teste_getTamanhoTabela);
+    RUN_TEST(teste_extenderTabela);
+    RUN_TEST(teste_funcaoHash);
+    RUN_TEST(teste_criarConteudo);
+    RUN_TEST(teste_inserirConteudo);
+    RUN_TEST(teste_buscarConteudo);
+    RUN_TEST(teste_removerConteudo);
+    RUN_TEST(teste_liberarTabela);
+    return UNITY_END();
+}
